@@ -8,15 +8,13 @@ import Temperatura from "./pages/Temperatura";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Dashboard-React-Avan-ado">
       <Routes>
         <Route path="/" element={<Layout />}>
-
           <Route index element={<Home />} />
           <Route path="chuva" element={<Chuva />} />
           <Route path="ondas" element={<Ondas />} />
           <Route path="temperatura" element={<Temperatura />} />
-
         </Route>
       </Routes>
     </BrowserRouter>
